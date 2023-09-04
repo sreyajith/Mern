@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .vertical-menu {
+            width: 200px;
+            border: 1px solid transparent;
+            outline: 2px solid #000000;
+            padding: 6px;
+        }
+
+        .vertical-menu a {
+            background-color: #0cfffff4;
+            color: rgb(22, 95, 221);
+            display: block;
+            padding: 12px;
+            text-decoration: none;
+        }
+
+        .vertical-menu a:hover {
+            background-color: #ffe7a4;
+        }
+
+        .vertical-menu a.active {
+            background-color: #f7b63e;
+            color: rgb(17, 55, 225);
+        }
+
+        ul {
+            list-style-type: none;
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0;
+            overflow: hidden;
+            background-color: #fafafa;
+            border: 1px solid black;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 8px;
+            display: inline-block;
+        }
+
+        li {
+            display: inline;
+            float: left;
+            border-right: 1px solid #4548ed;
+            background-color: #c2baba;
+        }
+
+        li:last-child {
+            width: 60px;
+            height: 46.4px;
+        }
+
+        li a {
+            display: block;
+            color: #4548ed;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            border: 1px #4548ed;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #e8e2e2;
+        }
+
+        .active {
+            background-color: #7d807f;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h4>Vertical Navigation Bar</h4>
+    <div class="vertical-menu">
+        <a href="#" class="active">Home</a>
+        <a href="#">Java</a>
+        <a href="#">CSS</a>
+        <a href="#">HTML</a>
+        <a href="#">Bootstrap</a>
+    </div>
+    <h4>Horizontal Navigation Bar</h4>
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#java">Java</a></li>
+        <li><a href="#Html">HTML</a></li>
+        <li><a href="#css">CSS</a></li>
+        <li></li>
+    </ul>
+
+</body>
+
+</html>
